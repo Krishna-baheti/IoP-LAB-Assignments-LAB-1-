@@ -2,7 +2,8 @@
     Topic : Program to swap two variables without using third variable
     Author : Krishna Baheti (Branch - AI, Roll no. = B-66, Batch -2)
     Description : Taking input from user the two numbers and then 
-    swapping them
+    swapping them without using the third variable by using principles
+    of basic arithmetic operations like addition and subtraction
 */
 
 #include<stdio.h>
