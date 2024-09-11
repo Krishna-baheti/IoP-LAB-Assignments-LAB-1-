@@ -5,23 +5,18 @@
     it to minutes by dividing by 60 and then converting it to hours by dividing
     it by 3600 and converting it to days by dividing it by 3600*24 = 86400
 */
-
 #include<stdio.h>
 
 int main()
 {
-    printf("Enter the time (in seconds) : ");
-    int seconds;
-    float minutes, hours, days;
-    scanf("%d", &seconds);
-    minutes = seconds/60.0;
-    hours = seconds/3600.0;
-    days = seconds/86400.0;
-    printf("Days : %f",days);
-    printf("\n");
-    printf("Hours : %f", hours);
-    printf("\n");
-    printf("Minutes : %f", minutes);
-    printf("\n");
+    int period = 31558150;
+    int minutes, hours, days;
+    minutes = period/60;
+    hours = minutes/60;
+    days = hours/24;
+    printf("Days : %d \n",days);
+    printf("Hours : %d \n",hours);
+    printf("Minutes : %d \n",minutes);
     return 0;
 }
+
