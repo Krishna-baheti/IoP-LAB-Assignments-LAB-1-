@@ -11,15 +11,11 @@
 int main()
 {
     printf("Enter the time (in seconds) : ");
-    int seconds;
-    float minutes, hours;
-    scanf("%d", &seconds);
-    hours = seconds/3600;
-    minutes = (seconds/3600.0 - seconds/3600)*60;
-    printf("\n");
-    printf("Hours : %f", hours);
-    printf("\n");
-    printf("Minutes : %f", minutes);
-    printf("\n");
+    int seconds, minutes, hours;
+    scanf("%d",&seconds);
+    minutes = seconds/60;
+    hours = minutes/60;
+    printf("Hours : %d \n",hours);
+    printf("Minutes : %d \n",minutes);
     return 0;
 }
